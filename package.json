@@ -5,11 +5,11 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "start": "node server/app.js",
+    "start": "node api.js && node server/app.js",
     "server": "nodemon server/app.js",
     "client": "npm run dev --prefix client",
-    "build": "npm run build --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "build": "node api.js && npm run build --prefix client",
+    "dev": "node api.js && concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
