@@ -15,7 +15,6 @@ dist-ssr
 *.local
 
 # Editor directories and files
-.vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
@@ -28,7 +27,6 @@ dist-ssr
 pids
 *.pid
 *.seed
-.env
 lib-cov
 .nyc_output
 .grunt
@@ -37,3 +35,4 @@ build/Release
 jspm_packages
 .npm
 .node_repl_history
+config.bat
